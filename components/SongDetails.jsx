@@ -1,7 +1,7 @@
 import React from 'react';
 
 function SongDetails() {
-    return ( <></> );
+    return ( <>Detalles</> );
 }
 
 export default SongDetails;
