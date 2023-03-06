@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SongForm() {
+function SongForm(handleSearch) {
     return ( <>Formulario</> );
 }
 
