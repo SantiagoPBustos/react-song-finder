@@ -10,7 +10,7 @@ function SongFinder() {
     const [loading, setLoading] = useState(false);
 
     const handleSearch = (data) => {
-        console.log(data);
+        setSearch(data);
     };
 
     return (<>

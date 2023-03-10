@@ -31,6 +31,7 @@ function SongForm({handleSearch}) {
             <form onSubmit={handleSubmit}>
                 <input type="text" name='artist' placeholder='Nombre artista' onChange={handleChange} value={form.artist} />
                 <input type="text" name='song' placeholder='Nombre de canción' onChange={handleChange} value={form.song} />
+                <br/>
                 <input type="submit" value='Buscar'/>
             </form>
 
