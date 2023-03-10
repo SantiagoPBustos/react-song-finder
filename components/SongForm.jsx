@@ -5,11 +5,11 @@ const initForm = {
     song: "",
 };
 
-function SongForm(handleSearch) {
+function SongForm({handleSearch}) {
     const [form, setForm] = useState(initForm);
 
     const handleChange = (e) => {
-        setForm({...initForm, 
+        setForm({...form, 
         [e.target.name]: e.target.value,
     });
     };
