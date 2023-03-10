@@ -4,11 +4,12 @@ import SongArtist from './SongArtist';
 import SongLyric from './SongLyric';
 
 function SongDetails(search, lyric, description) {
+    if (!lyric || !description) return null;
+
     return ( 
     <>
-        <Message/>
-        <SongArtist/>
-        <SongLyric/>
+        {lyric.error || lyric.name === "AbortError"?<Message/>:<SongLyric/>}
+        {description.artist?<SongArtist/>:<Message/>}
     </> 
     );
 }
