@@ -16,10 +16,8 @@ function SongFinder() {
         const fetchData = async () => {
             const { artist, song } = search;
 
-            let artistURL = `https://www.theaudiodb.com/api/v1/json/2/search.php?s=coldplay`;
-            let songURL = `http://localhost:3000/song`;
-
-
+            let artistURL = `https://www.theaudiodb.com/api/v1/json/2/search.php?s=${artist}`;
+            let songURL = `http://localhost:3000/${song}`;
 
             setLoading(true);
 
