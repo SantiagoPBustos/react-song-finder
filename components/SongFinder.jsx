@@ -9,6 +9,20 @@ function SongFinder() {
     const [description, setDescription] = useState(null);
     const [loading, setLoading] = useState(false);
 
+    useEffect(()=>{
+        if (search === null) return;
+        
+        const fetchData = async () => {
+            const {artist, song} = search;
+
+            let artistURL = `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artist}`;
+            let songURL = `https://api.lyrics.ovh/v1/${artist}/${song}`;
+        }
+
+        fetchData();
+
+    },[search]);
+
     const handleSearch = (data) => {
         setSearch(data);
     };
