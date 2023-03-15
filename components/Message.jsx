@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Message = ({ msg }) => {
-    return (
-        <div>
-            <p>{msg}</p>
-        </div>
-    )
-}
+const Message = ({ msg, bgColor }) => {
+  let styles = {
+    backgroundColor: bgColor,
+  };
 
-export default Message
+  return (
+    <div style={styles}>
+      <p dangerouslySetInnerHTML={{ __html: msg }} />
+    </div>
+  );
+};
+
+export default Message;

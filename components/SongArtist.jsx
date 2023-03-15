@@ -2,7 +2,7 @@ import React from 'react'
 
 function SongArtist() {
   return (
-    <div>SongArtist</div>
+    <div>INFO ARTISTA</div>
   )
 }
 

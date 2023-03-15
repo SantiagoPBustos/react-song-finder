@@ -2,7 +2,7 @@ import React from 'react'
 
 const SongLyric = () => {
   return (
-    <div>SongLyric</div>
+    <div>LETRA DE LA CANCIÓN</div>
   )
 }
 

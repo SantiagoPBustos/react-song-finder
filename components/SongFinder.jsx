@@ -44,9 +44,7 @@ function SongFinder() {
     return (<>
         <SongForm handleSearch={handleSearch} />        
         {loading && <Loader />}
-        {search && !loading &&
-         (<SongDetails search={search} lyric={lyric} description={description} />)
-        }
+        <SongDetails search={search} lyric={lyric} description={description} />
         
     </>);
 }
